@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/styleCommerce.css">
+    <link rel="shortcut icon" href="img/logo/logo-icon.png">
+    <title>Shop</title>
+</head>
+<body>
+    <nav class="navbar"> <!-- NAVBAR -->
+        <div class="nav-bar-logo"><a href="#"><img src="img/logo/logo.png" alt=""></a></div>
+        <input type='checkbox' id='check' /><!--NUEVO-->
+        <div class="opciones-navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Bookings</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><img src="img/logo/shoppingCard.png" id="btnAbrir" class="btnReserv"><li>
+            <select class="language">
+                <option><a href="#">🇺🇸 English</a></option>
+                <option><a href="/commerceES.html">🇪🇸 Spanish</a></option>
+            </select>
+            <label for="check" class="close-menu"><i class="fa-solid fa-xmark" style="color: #AD974F;"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #AD974F;"></i></label><!--NUEVO-->
+    </nav>
+
+    
+
+    <div class="overLay" id="ventana">
+        <div class="popup" id="emergente">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h2>My cart:</h2>
+            <div class="contenedor-inputs">
+                    
+            </div>
+            <h2>Total: $<strong class="precio-total">0</strong></h2>
+            <div class="btn-reserva">
+                <a type="submit" class="btn-submit" href="facturaEN.html">Confirm purchase</a>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="header-container">
+            <div class="text">
+                <h1>Good <span>prices,</span> good <span>food,</span> unique <span>experiences.</span></h1>
+                <p>Immerse yourself in a unique culinary experience at KGrill Fusion, where passion for gastronomy combines with fresh flavors and unforgettable memories.</p>
+                <a href="#container">Go to the menu</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!-- Menu -->
+        <h2>Our <span>menu</span></h2>
+
+        <!--Entradas-->
+        <section class="container">
+            <h3>Appetizers</h3>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper entradas">
+                            <!-- Funcion cargada -->
+                    </div>
+                </div>
+        </section>
+
+        <div class="descripcion-container entrada" data-aos="fade-left"><!--ENTRADAS--></div>  
+
+
+
+        <!--Fuertes-->
+        <section class="container">
+            <h3>Main courses</h3>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper fuertes">
+                        <!-- Funcion cargada -->
+                </div>
+            </div>
+        </section>
+
+        <div class="descripcion-container fuerte" data-aos="fade-left"><!--FUERTES--></div>
+
+
+
+        <!--Postres-->
+        <section class="container">
+            <h3>Desserts</h3>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper postres">
+                            <!-- Funcion cargada -->
+                </div>
+            </div>
+        </section>
+
+        <div class="descripcion-container postre" data-aos="fade-left"><!--POSTRES--></div>
+
+
+
+        <!--Bebidas-->
+        <section class="container">
+            <h3>Beverages</h3>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper bebidas">
+                            <!-- Funcion cargada -->
+                </div>
+            </div>
+        </section>
+
+        <div class="descripcion-container bebida" data-aos="fade-left"><!--BEBIDAS--></div>
+        
+
+
+        <!--Fusion-->
+        <section class="container">
+            <h3>Fusion</h3>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper fusiones">
+                            <!-- Funcion cargada -->
+                </div>
+            </div>
+        </section>
+
+        <div class="descripcion-container fusion" data-aos="fade-left"><!--BEBIDAS--></div>
+
+
+        <!-- Patrocinadores -->
+        <section class="patrocinadores">
+            <img src="img/angus.png" alt="angus-beef-logo">
+            <img src="img/colanta.png" alt="">
+            <img src="img/nongshim.png" alt="angus-beef-logo">
+        </section>
+    </main>
+
+    <!-- Servicios -->
+    <section class="servicios">
+        <div class="card-servicios">
+            <div>
+                <p>Book for a <span>special</span> moment</p>
+                <a href="#">Book</a>
+            </div>
+        </div>
+
+        <div class="card-servicios">
+            <div>
+                <p>Do you want to learn <span>to cook</span> with us?</p>
+                <a href="#">Book</a>
+            </div>
+        </div>
+
+        <div class="card-servicios">
+            <div>
+                <p>Have an amazing time at our <span>rooftop</span></p>
+                <a href="rooftopEN.html">Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="info-footer">
+            <h5>Who we are?</h5>            
+            <img src="img/logo/logo.png" alt="">
+            <p>KGrill Fusion is a vibrant and authentic gastronomic experience that has captivated taste buds with its exciting blend of traditional and contemporary flavors. Located in the heart of the city, it offers a welcoming and modern atmosphere.</p>
+        </div>
+
+        <div class="contacto">
+            <h5>Information</h5>
+            <div>
+                <h6>Address:</h6>
+                <p>Carrera 34 #69-34</p>
+            </div>
+
+            <div>
+                <h6>Contact Number:</h6>
+                <p>325 757 55</p>
+            </div>
+        </div>
+
+        <div class="contacto">
+            <h5>See more</h5>
+            <a href="">Home</a>
+            <a href="">Bookings</a>
+            <a href="">Contact us</a>
+        </div>
+
+        <div class="redes">
+            <h5>Follow us</h5>
+            <a href=""><img src="img/logo/facebook-icon.png" alt=""></a>
+            <a href=""><img src="img/logo/instagram-icon.png" alt=""></a>
+            <a href=""><img src="img/logo/whatsapp-icon.png" alt=""></a>
+            <a href=""><img src="img/logo/mail-icon.png" alt=""></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/dbEn.js"></script>
+    <script src="js/indexCommerce.js"></script>
+</body>
+</html>

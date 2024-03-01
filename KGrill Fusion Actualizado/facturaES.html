@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    
+    <title>Confirma tu compra</title>
+    <link rel="stylesheet" href="css/stylesFactura.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-bar-logo"><a href="#"><img src="img/logo/logo.png" alt=""></a></div>
+            <input type='checkbox' id='check' /><!--NUEVO-->
+            <div class="opciones-navbar">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Reservas</a></li>
+                <li><a href="commerceES.html">Menu</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark" style="color: #AD974F;"></i></label>
+                <select class="language">
+                    <option><a href="#">🇪🇸 Español</a></option>
+                    <option><a href="facturaEN.html">🇺🇸 Ingles</a></option>
+                </select>
+            </div>
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #AD974F;"></i></label><!--NUEVO-->
+        </nav>
+    </header>
+
+    <div id ="factura">
+        <h1>PEDIDOS</h1>
+        <div class="facturacionContainer">
+            <div class="productos">
+                <!-- compras -->
+
+            </div>
+
+
+            <form id="form" >
+                <h2>Resumen del pedido</h2>
+                
+                <label for="direccion">Direccion de entrega:</label>
+                <input type="text" id="direccion" placeholder="Ingresa tu direccion" required>
+
+                <label for="numero">Numero de contacto</label>
+                <input type="tel" id="numero" placeholder="Ingresa tu numero de contacto." required>
+                
+                <label for="tipodepedido">Como quieres que llegue tu comida?</label>
+                <select id="tipodepedido" required>
+                    <option>Seleccionar una opción.</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Al Vacio">Empacada al vacio</option>
+                </select>
+                
+                <label for="metodosdepago">Como quieres pagar?</label>
+                <select id="metodosdepago" required>
+                    <option>Seleccionar una opción.</option>
+                    <option value="Tarjeta" >Tarjeta</option>
+                    <option value="Efectivo">Efectivo</option>
+                </select>
+
+                <h2>Total: $<strong class="precio-total">0</strong></h2>
+                <button id="btnAbrir" class="btnReserv">Completar compra</button>
+            </form>
+
+            
+        </div>
+    </div>
+
+    <!--    MODAL   -->
+    <div class="overLay" id="ventana">
+        <div class="popup" id="emergente">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h2>Has completado tu compra. Muchas gracias por elegirnos!</h2>
+            <div class="btn-reserva">
+                <a class="btn-submit" href="#">Volver al inicio.</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/factura.js"></script>
+</body>
+</html>

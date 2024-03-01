@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCursos.css">
+    <link rel="shortcut icon" href="img/imgcursos/logo-icon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Kgrill Lovers</title>
+</head>
+<body>
+    <nav class="navbar"> <!-- inicio nav -->
+        <div class="nav-bar-logo"><a href="#"><img src="img/imgcursos/logo.png" alt=""></a></div>
+        <input type='checkbox' id='check' /><!--NUEVO-->
+        <div class="opciones-navbar">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Lovers</a></li>
+            <li><a href="">Rooftop</a></li>
+            <li><a href=""><img src="img/imgcursos/user.png" alt="" id="user"></a></li>
+            <li><button id="btnAbrir" class="btnReserv">Reserva aqui</button></li>
+            
+            <label for="check" class="close-menu"><i class="fa-solid fa-xmark" style="color: #AD974F;"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #AD974F;"></i></label><!--NUEVO-->
+    </nav> <!-- fin navbar -->
+
+    <!-- login y register -->
+    <div class="contenedor_todo">
+        <a href="#" id="btnLoginCerrar" class="btnLoginCerrar"><i class="fas fa-times"></i></a>
+        <div class="containerLogin">
+            <div class="caja_trasera">
+                <div class="caja_trasera_login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>inicia sesión para entrar a la pagina</p>
+                    <button id="btn_iniciar_sesion">Iniciar sesión</button>
+                </div>
+                <div class="caja_trasera_register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>registrate para que puedas iniciar sesion</p>
+                    <button id="btn_register">Registrate</button>
+                </div>
+            </div>
+            <!-- formulario de login y registro -->
+            <div class="contenedor_login_register">
+                <!-- login -->
+                <form action="" class="formulario_login" id="formulario_login">
+                    <h2>Iniciar sesion</h2>
+                    <input type="text" placeholder="correo electronico" id="correoLogin" required>
+                    <input type="password" placeholder="contraseña" id="passwordLogin" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <!-- registro -->
+                <form action="" class="formulario_register" id="formRegister">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre completo" id="nombreRegister" required>
+                    <input type="email" placeholder="Correo electronico" id="emailRegister" required>
+                    <input type="text" placeholder="Usuario" id="usuarioRegister" required>
+                    <input type="password" placeholder="Contraseña" id="contraseñaRegister" required>
+                    <p id="parrafo" class="parrafoRegister"></p>
+                    <button type="submit">Registrarse</button>
+                    
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fin login y register -->
+    <!-- ventana emergente reserva -->
+    <div class="overLay" id="ventana">
+        <div class="popup" id="emergente">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h2>Reservar mesa</h2>
+            <form action="" id="formulario">
+                <div class="contenedor-inputs">
+                    <label for="nombre" class="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Kgrill Fusion">
+                    <label for="email" class="email">Email:</label>
+                    <input type="email" id="email" placeholder="kgrill@gmail.com">
+                    <label for="cantidadPersonas" class="cantidadPersonas">Cantidad Personas:</label>
+                    <input type="number" id="cantidadPersonas" placeholder="2...">
+                    <label for="nombre" class="tipoMesa">Tipo de mesa:</label>
+                    <input type="text" multiple id="tipo" list="tipoMesa" required>
+                    <datalist id="tipoMesa">
+                        <option value="Mesa parrilla">Mesa parrilla</option>
+                        <option value="Mesa buffet">Mesa buffet</option>
+                        <option value="Mesa Cojin">Mesa Cojin</option>
+                        <option value="Mesa sencilla">Mesa sencilla</option>
+                    </datalist>
+                    <label for="dia" class="dia">Dia:</label>
+                    <input type="date" id="dia" placeholder="Lunes...">
+                    <label for="hora" class="hora">Hora:</label>
+                    <input type="time" id="hora" placeholder="Hora">
+                </div>
+                <div class="btn-reserva">
+                    <input type="submit" class="btn-submit" id="btn2Modal" value="Confirmar reserva">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Video publicidad -->
+   <section class="video-info">
+    <div class="video-text">
+        <img src="img/imgcursos/logo.png">
+        <h2>¿Listo para un desafío culinario épico? Únete a nuestro viaje gastronómico de 8 semanas y conquista los sabores del mundo.</h2>
+       
+    </div>
+
+    <video autoplay="autoplay" loop="loop"  id="video_background" preload="auto" muted>
+        <source src="img/imgcursos/food_-_24999 (1080p).mp4" type="video/mp4" />
+    </video>
+</section>
+
+    <div class="plan">
+        <div class="img-plan">
+            <img src="img/imgcursos/servicio1.webp" alt="" data-aos="zoom-in">
+        </div>
+        <div class="description-plan">
+            <h3>¡Bienvenido a nuestro exclusivo programa de cursos de cocina internacional de KGrill Fusion!</h3>
+                <p class="parrafoLargo">Durante 8 semanas, te invitamos a embarcarte en un viaje culinario sin igual, explorando los sabores auténticos de 8 países diferentes, todo desde la comodidad de tu cocina. Cada semana, sumergirás tus sentidos en la riqueza gastronómica de una cultura distinta, aprendiendo de nuestros mejores chefs de KGrill Fusion.</p>
+        </div>
+    </div>
+
+    <div class="container-img" id="container-img">
+        
+    </div>
+    <div class="descripcion-container entrada" id="boton">
+
+    </div>
+
+    <div class="proximamente">
+        <h3>PROXIMAMENTE...</h3>
+    </div>
+    <div class="reserva-Curso">
+        <button id="reservarCurso" > Reservar Curso</button>
+    </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="info-footer">
+                <h5>Quienes somos?</h5>
+                <img src="img/imgcursos/logo/logo.png" alt="">
+                <p>KGrill Fusion es un vibrante y auténtica experiencia gastronomica que ha conquistado los paladares con su emocionante fusión de sabores tradicionales y contemporáneos. Ubicado en el corazón de la ciudad, el ambiente acogedor y moderno.</p>
+            </div>
+    
+            <div class="contacto">
+                <h5>Información</h5>
+                <div>
+                    <h6>Dirección:</h6>
+                    <p>Carrera 34 #69-34</p>
+                </div>
+    
+                <div>
+                    <h6>Numero de contacto:</h6>
+                    <p>325 757 55</p>
+                </div>
+            </div>
+            
+    
+            <div class="contacto">
+                <h5>Ver mas</h5>
+                <a href="">Inicio</a>
+                <a href="">Reserva</a>
+                <a href="">Contactanos</a>
+                <a href="">Sobre nosotros</a>
+            </div>
+    
+            <div class="redes">
+                <h5>Siguenos</h5>
+                <a href=""><img src="img/imgcursos/facebook-icon.png" alt=""></a>
+                <a href=""><img src="img/imgcursos/instagram-icon.png" alt=""></a>
+                <a href=""><img src="img/imgcursos/whatsapp-icon.png" alt=""></a>
+                <a href=""><img src="img/imgcursos/mail-icon.png" alt=""></a>
+            </div>
+        </footer>
+
+
+        <script src="js/indexcursos.js" ></script>
+        <script src="js/dbcursos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script src="js/scriptCursos.js"></script>
+
+    
+    <script src="js/jsInicio.js" type="module"></script>
+    <script src="js/formulario.js" type="module"></script>
+    <script src="js/scriptCursos.js"></script>
+</body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+

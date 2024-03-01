@@ -1,0 +1,88 @@
+{
+  "reservas": [
+    {
+      "id": "f87a"
+    },
+    {
+      "id": "dc1d",
+      "nombre": "ajajaja",
+      "email": "juan@gmail.com",
+      "cantidadPersonas": "4",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-01-24",
+      "hora": "00:36"
+    },
+    {
+      "id": "7d37",
+      "nombre": "ajajaja",
+      "email": "juan@gmail.com",
+      "cantidadPersonas": "4",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-01-31",
+      "hora": "10:37"
+    },
+    {
+      "id": "95af",
+      "nombre": "Luisa",
+      "email": "luisaperez2115@gmail.com",
+      "cantidadPersonas": "10",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-01-30",
+      "hora": "21:37"
+    },
+    {
+      "id": "2fae",
+      "nombre": "Luisa",
+      "email": "luisa@gmail.com",
+      "cantidadPersonas": "23",
+      "tipoMesa": "Mesa Cojin",
+      "dia": "2024-02-14",
+      "hora": "12:12"
+    },
+    {
+      "id": "ec52",
+      "nombre": "ana",
+      "email": "luisa@gmail.com",
+      "cantidadPersonas": "23",
+      "tipoMesa": "Mesa Cojin",
+      "dia": "2024-02-28",
+      "hora": "12:12"
+    },
+    {
+      "id": "ed56",
+      "nombre": "luisa",
+      "email": "lp@gmail.com",
+      "cantidadPersonas": "2",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-02-02",
+      "hora": "12:12"
+    },
+    {
+      "id": "8f44",
+      "nombre": "luisa",
+      "email": "lp@gmail.com",
+      "cantidadPersonas": "2",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-02-02",
+      "hora": "12:12"
+    },
+    {
+      "id": "160d",
+      "nombre": "luisa",
+      "email": "lp@gmail.com",
+      "cantidadPersonas": "2",
+      "tipoMesa": "Mesa parrilla",
+      "dia": "2024-02-02",
+      "hora": "12:12"
+    },
+    {
+      "id": "fb94",
+      "nombre": "Luisa",
+      "email": "perez@gmail.com",
+      "cantidadPersonas": "5",
+      "tipoMesa": "Mesa buffet",
+      "dia": "2024-02-02",
+      "hora": "20:30"
+    }
+  ]
+}

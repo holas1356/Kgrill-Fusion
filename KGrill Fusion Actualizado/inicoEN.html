@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styleInicio.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="img/imgInicio/logo/logo-icon.png" type="image/x-icon">
+    <title>Kgrill Fusion</title>
+</head>
+
+
+<body>
+    <nav class="navbar"> <!-- inicio nav -->
+        <div class="nav-bar-logo"><a href="#"><img src="img/imgInicio/logo/logo.png" alt=""></a></div>
+        <input type='checkbox' id='check' /><!--NUEVO-->
+        <div class="opciones-navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Lovers</a></li>
+            <li><a href="">Rooftop</a></li>
+            <li><a href=""><img src="img/imgInicio/logo/user.png" alt="" id="user"></a></li>
+            <li><button id="btnAbrir" class="btnReserv">Book a table</button></li>
+            <select class="language">
+                <option><a href="#">🇺🇸 English</a></option>
+                <option><a href="#">🇪🇸 Spanish</a></option>
+            </select>
+            <label for="check" class="close-menu"><i class="fa-solid fa-xmark" style="color: #AD974F;"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #AD974F;"></i></label><!--NUEVO-->
+    </nav> <!-- fin navbar -->
+
+    <!-- login y register -->
+    <div class="contenedor_todo">
+        <a href="#" id="btnLoginCerrar" class="btnLoginCerrar"><i class="fas fa-times"></i></a>
+        <div class="containerLogin">
+            <div class="caja_trasera">
+                <div class="caja_trasera_login">
+                    <h3>Do you already have an account?</h3>
+                    <p>log in to enter the page</p>
+                    <button id="btn_iniciar_sesion">Log In</button>
+                </div>
+                <div class="caja_trasera_register">
+                    <h3>Do not you have an account yet?</h3>
+                    <p>register so you can log in</p>
+                    <button id="btn_register">Sign Up</button>
+                </div>
+            </div>
+            <!-- formulario de login y registro -->
+            <div class="contenedor_login_register">
+                <!-- login -->
+                <form action="" class="formulario_login" id="formulario_login">
+                    <h2>Sign in</h2>
+                    <input type="text" placeholder="Email" id="correoLogin" required>
+                    <input type="password" placeholder="Password" id="passwordLogin" required>
+                    <button type="submit">Get in</button>
+                </form>
+                <!-- registro -->
+                <form action="" class="formulario_register" id="formRegister">
+                    <h2>Sign Up</h2>
+                    <input type="text" placeholder="Full name" id="nombreRegister" required>
+                    <input type="email" placeholder="Email" id="emailRegister" required>
+                    <input type="text" placeholder="User" id="usuarioRegister" required>
+                    <input type="password" placeholder="Password" id="contraseñaRegister" required>
+                    <p id="parrafo" class="parrafoRegister"></p>
+                    <button type="submit">Sign Up</button>
+                    
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fin login y register -->
+    <!-- ventana emergente reserva -->
+    <div class="overLay" id="ventana">
+        <div class="popup" id="emergente">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h2>Book a table</h2>
+            <form action="" id="formulario">
+                <div class="contenedor-inputs">
+                    <label for="nombre" class="nombre">Name:</label>
+                    <input type="text" id="nombre" placeholder="Kgrill Fusion">
+                    <label for="email" class="email">Email:</label>
+                    <input type="email" id="email" placeholder="kgrill@gmail.com">
+                    <label for="cantidadPersonas" class="cantidadPersonas">Number of people:</label>
+                    <input type="number" id="cantidadPersonas" placeholder="2...">
+                    <label for="nombre" class="tipoMesa">Type of Table:</label>
+                    <input type="text" multiple id="tipo" list="tipoMesa" required>
+                    <datalist id="tipoMesa">
+                        <option value="Mesa parrilla">Grill table</option>
+                        <option value="Mesa buffet">Buffet table</option>
+                        <option value="Mesa Cojin">Cushion table</option>
+                        <option value="Mesa sencilla">Simple table</option>
+                    </datalist>
+                    <label for="dia" class="dia">Day:</label>
+                    <input type="date" id="dia" placeholder="Monday...">
+                    <label for="hora" class="hora">Hour:</label>
+                    <input type="time" id="hora" placeholder="Hour">
+                </div>
+                <div class="btn-reserva">
+                    <input type="submit" class="btn-submit" id="btn2Modal" value="confirm reservation">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    
+    <header>
+        <div class="header-container"> <!-- contenedor img y texto -->
+            <div class="text">
+                <h2>Two cultures, one flavor:<br> KGrill Fusion.</h2>
+        
+            </div>
+        </div> <!-- fin contenedor img y texto -->
+    </header>
+
+
+    <!-- service start cards -->
+    <div class="cards">
+        <div class="card">
+            <div class="image-box" data-aos="fade-up">
+                <img src="img/imgInicio/card1.jpg">
+            </div>
+            <div class="content">
+                <h2>Meet our culinary masters</h2>
+                <p>At Kgrill fusion, our qualified chefs fuse the richness of Colombian gastronomy with the
+                    passion of Korean cuisine</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box" data-aos="fade-up">
+                <img src="img/imgInicio/card2.jpg">
+            </div>
+            <div class="content">
+                <h2>unmatched experience in every bite</h2>
+                <p>The quality of our promise, each fresh ingredient is combined to create authentic flavors that
+                    highlight the best of Colombian and Korean gastronomy</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box" data-aos="fade-up">
+                <img src="img/imgInicio/img4.jpg">
+            </div>
+            <div class="content">
+                <h2>Online orders, convenience at your door</h2>
+                <p>place your order with just a few clicks, our online ordering platform simplifies your experience
+                    culinary</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box" data-aos="fade-up">
+                <img src="img/imgInicio/card4.jpg">
+            </div>
+            <div class="content">
+                <h2>Rooftop Kgrill fusion, where your experiences are elevated</h2>
+                <p>Enjoy under the starry sky on our exclusive rooftop, obtaining premium bar service
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- service end cards-->
+
+    <div class="row"> <!--inicio about us -->
+        <div class="imagenes">
+            <div class="imgContainer">
+                <img class="img1" src="img/imgInicio/img1.jpg" alt="" data-aos="fade-down-right">
+                <img class="img2" src="img/imgInicio/img2.jpg" alt="" data-aos="fade-left">
+                <img class="img3" src="img/imgInicio/img3.jpg" alt="" data-aos="fade-up-right">
+                <img class="img4" src="img/imgInicio/img5.jpg" alt="" data-aos="fade-up-left">
+            </div>
+        </div>
+        <div class="textAbout">
+            <h5 class="Aboutus">Us</h5>
+            <h1 class="welcome">Wolcome to <i class="fa fa-utensils"></i> Kgrill Fusion</h1>
+            <p class="p1">We are excited to introduce you to our next opening, where we will fuse the rich Colombian culinary tradition with the vibrant passion of Korean cuisine. At our restaurant, we seek to create a unique dining experience that celebrates the fusion of these two culinary cultures. We hope to see you soon so you can discover the magic of KGrill Fusion for yourself!</p>
+           
+        </div>
+    </div> <!-- fin about us -->
+
+
+    <div><!-- inicio nuestros mejores platos -->
+        <h3 id="inicio">OUR BEST DISHES</h3>
+        <div class="mainDishes">
+            <div class="cardDishes">
+                <img src="img/imgInicio/fusion-bocado-de-angel.webp" class="imagen" alt="comida corana">
+                <h4>Bocado de angel</h4>
+                <p>★★★★☆ 4.5</p>
+                <h5> grammage:</h5>
+                <p>8 units</p>
+                <p> price: 27.000</p>
+                
+
+
+            </div>
+            <div class="cardDishes">
+                <img src="img/imgInicio/fusion-memorias.jpg" class="imagen" alt="">
+                <h4>Memorias</h4>
+                <p>★★★★★ 5.0</p>
+                <h5> grammage:</h5>
+                <p>300g</p>
+                <p> price: 27.000</p>
+                
+            </div>
+            <div class="cardDishes">
+                <img src="img/imgInicio/fusion-explosion.jpg" class="imagen" alt="">
+                <h4>Explosión</h4>
+                <p>★★★★☆ 4.8</p>
+                <h5> grammage:</h5>
+                <p>4 units</p>
+                <p> price: 13.000</p>
+                
+            </div>
+            <div class="cardDishes">
+                <img src="img/imgInicio/fusion-camino-cafetero.jpg" class="imagen" alt="">
+                <h4>Camino cafetero</h4>
+                <p>★★★★★ 5.0</p>
+                <h5> grammage:</h5>
+                <p>150g</p>
+                <p> price: 20.000</p>
+                
+            </div>
+        </div>
+
+    </div> <!-- fin nuestros mejores platos -->
+
+    <section class="consumes"> <!-- informe nutricional -->
+        <div class="parrafo">
+            <h6>Know the details of the foods you consume</h6>
+            <p>Each ingredient tells a unique story, and by understanding its origin and quality, we honor the culinary tradition of Colombia and Korea. We invite you to join us on this journey of discovery and appreciation of authentic flavors.</p>
+            <a href="www.google.com" class="button">Read more...</a>
+        </div>
+        <div>
+            <img src="img/imgInicio/download_image_1705269667280-ai-brush-removebg-zd210omt.png" id="img-consumidor" alt=""
+                data-aos="zoom-in">
+        </div>
+    </section> <!-- fin informe nutricional -->
+
+    <div class="letter"> <!-- inicio de blog -->
+        <div class="letter-head">
+            <h2>Subscribe to our <span>Blog</span></h2>
+        </div>
+        <div class="letter-input">
+
+            <div class="textInput">
+                <input type="email" placeholder="Correo electronico ... ">
+            </div>
+            <button class="btn" id="btm-blog" data-aos="zoom-in"> Subscribe</button>
+
+        </div>
+    </div> <!-- fin de blog -->
+
+
+    <div class="app"><!-- descargar app -->
+        <div class="container">
+            <h2>Download our App!!</h2>
+            <div class="play">
+                <a href="https://play.google.com/store/games?hl=es_419&gl=US&pli=1" target="_blank"> <img
+                        src="img/imgInicio/playStore.png" width="110px"></a>
+                <a href="https://www.apple.com/co/app-store/" target="_blank"> <img src="img/imgInicio/appStore.png"
+                        width="130px"></a>
+            </div>
+        </div>
+
+    </div> <!-- fin apps -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+       <script src="js/scriptCursos.js"></script>
+
+       <script src="js/jsInicio.js" type="module"></script>
+       <script src="js/formulario.js" type="module"></script>
+       <script src="js/scriptCursos.js"></script>
+</body>
+
+</html>
+
